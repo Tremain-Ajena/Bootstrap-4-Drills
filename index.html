@@ -1,24 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap 4 Drills</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <div class="row justify-content-center">
             <h1>First Bootstrap Project</h1>
         </div>
         <div class="row">
-            <div class="row justify-content-start">Freddy</div>
-            <div class="row justify-content-between">Chucky</div>
-            <div class="row justify-content-end">LeatherFace</div>
+            <div class="justify-content-start px-3 py-3">
+                <div class="col-4">Freddy</div>
+            </div>
+            <div class="justify-content-center px-3 py-3">
+                <div class="col-4">Chucky</div>
+            </div>
+            <div class="justify-content-end px-3 py-3">
+                <div class="col-4">LeatherFace</div>
+            </div>
         </div>
-    </div>
-    
+
+        <div class="row">
+            <span class="border border-primary col-12">
+                <form class="px-3 py-3">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email Address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll definitely share your email with
+                            everyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Dogs</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Cats</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Cheese Pizza</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Hawaiian Pizza</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3">Supreme Pizza</label>
+                    </div>
+                    <div class="submit-button py-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </span>
+        </div>
+        <div class="row">
+            <div class="card col-4" style="width: 18rem;">
+                <img class="card-img-top"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Freddy_Krueger_%28Robert_Englund%29.jpg/220px-Freddy_Krueger_%28Robert_Englund%29.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="text-center">Freddy K.</h3>
+                    <p class="card-text text-center">He's all about getting a full afterlife's worth of sleep...and
+                        murder. He also really enjoys a good manicure.</p>
+                </div>
+            </div>
+            <div class="card col-4" style="width: 18rem;">
+                <img class="card-img-top"
+                    src="https://thepopinsider.com/wp-content/uploads/2018/12/ChildsPlay.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="text-center">Chucky L.R.</h3>
+                    <p class="card-text text-center">He enjoys voodoo, late night stabbings, and transfering his soul into Andy's body.</p>
+                </div>
+            </div>
+            <div class="card col-4" style="width: 18rem;">
+                <img class="card-img-top"
+                    src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fewedit.files.wordpress.com%2F2018%2F10%2Fhtra147_vv262.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="text-center">Michael M.</h3>
+                    <p class="card-text text-center">His hobbies are finding and killing Laurie Strode, murdering everything around, walking slower than a snail, and teleporting to the exact location of his next kill.</p>
+                </div>
+            </div>
+            <div class="card col-4" style="width: 18rem;">
+                <img class="card-img-top"
+                    src="https://upload.wikimedia.org/wikipedia/en/7/7b/Candyman_Tony_Todd.png"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="text-center">Candyman R.</h3>
+                    <p class="card-text text-center">He lives for gossip and rumours. He loves sharing his pain and asking his friends and family to politely "be his victim".</p>
+                </div>
+            </div>
+            <div class="card col-4" style="width: 18rem;">
+                <img class="card-img-top"
+                    src="https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2016/10/Leatherface.jpg?fit=1934%2C1088&ssl=1"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="text-center">LeatherFace</h3>
+                    <p class="card-text text-center">He likes to play dress-up...with other people's skin. He's a big fan of chainsaw art.</p>
+                </div>
+            </div>
+            <div class="card col-4" style="width: 18rem;">
+                <img class="card-img-top"
+                    src="http://mouse.latercera.com/wp-content/uploads/2019/05/pinhead.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="text-center">Pinhead</h3>
+                    <p class="card-text text-center">He believes in the suffering of all and is an avid fan of piercings, chains, and ripping people apart. He's very popular among the cenobyte community.</p>
+                </div>
+            </div>
+        </div>
+
 </body>
+
 </html>
